@@ -4,7 +4,7 @@
 const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = '5';
 
 // Crea una variable booleana:
 const nuevoBool = null;
@@ -101,6 +101,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+
   
 }
 
@@ -179,7 +180,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  return lado * 4;
 }
 
 
@@ -194,6 +195,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+  let dolar = 1.20;
+  return euro * dolar;
   
 }
 
@@ -204,8 +207,21 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
-}
+  if(letra.length > 1){
+    return "Dato incorrecto";
+  } else if(
+    letra == 'a' 
+    || letra == 'e' 
+    || letra == 'i' 
+    || letra == 'o' 
+    || letra == 'u'){
+      return "Es vocal";
+    }else{
+      return "Dato incorrecto";
+    }
+    
+}  
+
 
 
 
